@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragna Soruppu - Projects</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Optima:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Neutraface+Text:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Neutraface Text', sans-serif;
+            background-color: #FFFBE8;
+            color: #2966AC;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-family: 'Havelock titling', serif;
+            font-size: 24px;
+            font-weight: medium;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2966AC;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .project {
+            background-color: #f7da59a9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%; 
+        }
+
+        .project h2 {
+            font-family: 'Optima', serif;
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2966AC;
+        }
+
+        .project p {
+            font-size: 16px;
+            color: #2966AC;
+        }
+
+        .project {
+            background-color: #f7da59a9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        .project:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            background-color: #2966AC;
+            color: #FFFBE8;
+        }
+        .email-link {
+            color: #FFFBE8; /* Default link color */
+            text-decoration: none; /* No underline by default */
+            font-weight: medium; /* Emphasize the link */
+            transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+        }
+
+        .email-link:hover {
+            color: #f7da59; /* Change color on hover */
+            text-decoration: underline; /* Underline on hover to show it's clickable */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Pragna Soruppu</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">My work</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="projects">
+                <div class="project">
+                    <h2>HeatIQ - Smart cooking solutions</h2>
+                    <p>This project aims to design a smart stove system and companion mobile app that simplify cooking and enhance safety for multitasking users. By integrating features like real-time monitoring, heat automation, and intuitive controls, it provides a seamless and efficient cooking experience.</p>
+                </div>
+                <div class="project">
+                    <h2>O'er lanes - Game design</h2>
+                    <p>O'er Lanes is a mobile game with a simple but addictive concept. It's an endless arcade hopper where you control a character and try to navigate busy roads, train tracks, and rivers. You hop from platform to platform, dodging traffic and other hazards to get as far as possible.</p> 
+                </div> 
+                <div class="project">
+                    <h2>NexGate - The smart way in</h2>
+                    <p>NexGate is an innovative smart door solution that enhances home security and convenience. It offers seamless communication and real-time updates between residents and visitors, ensuring a safe and efficient entry process. With a focus on user-friendly interfaces and reliable access control, NexGate redefines home interactions.</p>
+                </div>
+                <div class="project">
+                    <h2>Graphic Zine - A day in a design school</h2>
+                    <p>The "A Day in Design School" zine is like a colorful trip through creativity using only two colors. It shows the fun and learning in design school with simple pictures and words. Even with just two colors, it captures the excitement of learning and creating. It shows that even with limits, creativity can still shine bright.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Let's Connect!</p> 
+        <p>
+            <a href="mailto:pragnasoruppu08@gmail.com" class="email-link">email: pragnasoruppu08@gmail.com</a>
+        </p>
+        <br>
+        <p>All Rights Reserved</p>
+    </footer>
+</body>
+</html>

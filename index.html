@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESIGN PORTFOLIO 2024 - Pragna Soruppu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Optima:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Neutraface+Text:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Neutraface Text', sans-serif;
+            background-color: #FFFBE8;
+            color: #2966AC;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-family: 'Havelock titling', serif;
+            font-size: 24px;
+            font-weight: medium;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2966AC;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-family: 'Optima', serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            grid-template-areas: 
+                "heatIQ oerLanes"
+                "nexGate graphicZine"; 
+            gap: 20px;
+            justify-items: center; 
+        }
+
+        .project {
+            background-color: #f7da59a9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        .project:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 20px;
+            text-align: center; 
+        }
+
+        .project-info h3 {
+            font-family: 'Optima', serif;
+            margin-bottom: 10px;
+        }
+
+        .view-project {
+            display: inline-block;
+            background-color: #2966AC;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .more-projects {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .more-projects a {
+            display: inline-block;
+            background-color: #2966AC;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Specific project placements */
+        .project:nth-child(1) {
+            grid-area: heatIQ;
+        }
+
+        .project:nth-child(2) {
+            grid-area: oerLanes;
+        }
+
+        .project:nth-child(3) {
+            grid-area: nexGate;
+        }
+
+        .project:nth-child(4) {
+            grid-area: graphicZine;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            background-color: #2966AC;
+            color: #fff;
+        }
+        .email-link {
+            color: #FFFBE8; /* Default link color */
+            text-decoration: none; /* No underline by default */
+            font-weight: medium; /* Emphasize the link */
+            transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+        }
+
+        .email-link:hover {
+            color: #f7da59; /* Change color on hover */
+            text-decoration: underline; /* Underline on hover to show it's clickable */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Pragna Soruppu</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="MW2.HTML">My work</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>DESIGN PORTFOLIO 2024</h1>
+            </section>
+
+            <section class="projects">
+                <div class="project">
+                    <img src="PRAGNA'S STOVE1.png" alt="HeatIQ">
+                    <div class="project-info">
+                        <h3>HeatIQ - Smart cooking solutions</h3>
+                        <a href="MW2.HTML" class="view-project">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="POST_2_-_SLIDE_3-removebg-preview 1.png" alt="O'er lanes">
+                    <div class="project-info">
+                        <h3>O'er lanes - Game design</h3>
+                        <a href="MW2.HTML" class="view-project">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Group 2425.png" alt="NexGate">
+                    <div class="project-info">
+                        <h3>NexGate - The smart way in</h3>
+                        <a href="MW2.HTML" class="view-project">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="two_plain_white_brochures_on_transparent_background 1.png" alt="Graphic Zine">
+                    <div class="project-info">
+                        <h3>Graphic Zine - A day in a design school</h3>
+                        <a href="MW2.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="more-projects">
+                <a href="MW2.HTML">More Projects</a>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>Let's Connect!</p> 
+        <p>
+            <a href="mailto:pragnasoruppu08@gmail.com" class="email-link">email: pragnasoruppu08@gmail.com</a>
+        </p>
+        <br>
+        <p>All Rights Reserved</p>
+    </footer>
+    
+</body>
+</html>
